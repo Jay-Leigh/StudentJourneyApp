@@ -6,4 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:translationY="20dp"
+            android:translationX="60dp"
+            android:gravity="start|center"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:text="@string/name"
+            android:background="@drawable/contentblock"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:background="@drawable/contentblock"
+            android:src="@drawable/logo"
+            android:scaleX=".7"
+            android:scaleY=".7"/>
+
+        <GridView
+            android:id="@+id/gvMods"
+            android:translationX="60dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:verticalSpacing="50dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:translationY="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Nav"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/stadioline"
+                app:layout_constraintEnd_toStartOf="@+id/Nav" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/Nav"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bttmnav" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
