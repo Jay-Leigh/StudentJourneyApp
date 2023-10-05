@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -43,7 +44,7 @@ android {
 dependencies {
 
     //Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
 
     implementation("androidx.core:core-ktx:1.12.0")
 
