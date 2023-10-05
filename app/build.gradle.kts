@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
-    id("com.google.gms.google-services")
 }
 
 android {
@@ -44,7 +43,7 @@ android {
 dependencies {
 
     //Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
 
     implementation("androidx.core:core-ktx:1.12.0")
 
@@ -59,8 +58,6 @@ dependencies {
 
     // Add the dependency for the Cloud Storage library
     implementation("com.google.firebase:firebase-storage-ktx")
-
-    implementation("com.google.android.material:material:1.9.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

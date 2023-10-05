@@ -1,15 +1,3 @@
 <resources>
     <string name="app_name">StudentJourney</string>
-    <string name="login">Login</string>
-    <string name="register">Register</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="create_an_account">Create An Account</string>
-    <string name="home">Home</string>
-    <string name="menu">Menu</string>
-    <string name="name">Name</string>
-    <string name="prep">Prep</string>
-    <string name="prep_and_learning">Prep and Learning</string>
-    <string name="certification">Certification</string>
-    <string name="alumni_life_long_learning"><![CDATA[Alumni & Life-Long Learning]]></string>
 </resources>
