@@ -47,10 +47,6 @@
             android:translationX="80dp"
             android:translationY="300dp" />
 
-
-
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
