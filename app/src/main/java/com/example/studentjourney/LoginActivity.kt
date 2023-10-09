@@ -2,6 +2,7 @@ package com.example.studentjourney
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.ttest.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
