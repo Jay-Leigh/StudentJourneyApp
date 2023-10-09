@@ -38,14 +38,14 @@
             android:gravity="center_horizontal"
             android:translationY="60dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/Email"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/greybutts"
+                android:backgroundTint="@color/white"
                 android:ems="10"
                 android:hint="@string/email"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
@@ -60,11 +60,11 @@
             android:gravity="center_horizontal"
             android:translationY="60dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/Pword"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/greybutts"
+                android:backgroundTint="@color/white"
                 android:ems="10"
                 android:hint="@string/password"
                 android:inputType="textPassword"
