@@ -12,7 +12,7 @@ class LoginActivity : AppCompatActivity() {
 
         val tvReg = findViewById<TextView>(R.id.tvCA)
         tvReg.setOnClickListener {
-            val intent = Intent(this, ::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }
