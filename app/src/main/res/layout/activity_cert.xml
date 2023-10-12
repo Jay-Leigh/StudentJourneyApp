@@ -88,8 +88,9 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/Nav"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="60dp"
                 android:layout_alignParentBottom="true"
+                android:background="@color/lgrey"
                 app:menu="@menu/bttmnav" />
 
         </RelativeLayout>
