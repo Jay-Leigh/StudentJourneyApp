@@ -12,7 +12,20 @@
           "package_name": "com.example.studentjourney"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "103849045854-a2bv7u3vn0tr0qk4araeg8mu947g33c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentjourney",
+            "certificate_hash": "270988923e265c2e33b800144ee9cd65346bc9df"
+          }
+        },
+        {
+          "client_id": "103849045854-hm8cn2e3ep9st1n07o47dvmak3eqsnbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDWXFIzSOv-ckefVijwph6ty254WcSSB74"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103849045854-hm8cn2e3ep9st1n07o47dvmak3eqsnbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

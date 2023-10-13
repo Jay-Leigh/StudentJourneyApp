@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/tvDname"
             android:translationY="20dp"
             android:translationX="60dp"
             android:gravity="start|center"
