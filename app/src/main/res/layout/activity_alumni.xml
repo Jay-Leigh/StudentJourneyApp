@@ -89,9 +89,14 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/Nav"
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="60dp"
                 android:layout_alignParentBottom="true"
                 android:background="@color/lgrey"
+=======
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+>>>>>>> 8d0e7c2 (Testing whether files commit or not)
                 app:menu="@menu/bttmnav" />
 
         </RelativeLayout>
