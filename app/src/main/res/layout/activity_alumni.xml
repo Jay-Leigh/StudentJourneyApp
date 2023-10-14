@@ -56,11 +56,12 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="0dp"
                 android:gravity="center"
-                android:translationX="20dp"
-                android:translationY="30dp"
-                android:text="@string/alumni_life_long_learning"
+                android:translationX="90dp"
+                android:translationY="25dp"
+                android:text="@string/almuni"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textStyle="bold"
+                android:textSize="30sp" />
 
         </RelativeLayout>
 
@@ -76,27 +77,20 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:translationY="150dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/Nav"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="0dp"
                 android:layout_marginBottom="150dp"
                 android:background="@drawable/stadioline"
-                android:translationY="150dp"
                 app:layout_constraintEnd_toStartOf="@+id/Nav" />
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/Nav"
                 android:layout_width="match_parent"
-<<<<<<< HEAD
                 android:layout_height="60dp"
                 android:layout_alignParentBottom="true"
                 android:background="@color/lgrey"
-=======
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
->>>>>>> 8d0e7c2 (Testing whether files commit or not)
                 app:menu="@menu/bttmnav" />
 
         </RelativeLayout>
