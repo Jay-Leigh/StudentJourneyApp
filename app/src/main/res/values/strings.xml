@@ -17,4 +17,6 @@
     <string name="question">Question</string>
     <string name="assignment_with_dates">Assignment With Dates</string>
     <string name="almuni">Almuni</string>
+    <string name="sign_in">Sign IN</string>
+    <string name="sign_in1">SIGN IN</string>
 </resources>
