@@ -53,13 +53,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="0dp"
+                android:layout_marginStart="-22dp"
                 android:gravity="center"
-                android:translationX="65dp"
-                android:translationY="25dp"
                 android:text="@string/certification"
+                android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:translationX="65dp"
+                android:translationY="25dp" />
 
         </RelativeLayout>
 

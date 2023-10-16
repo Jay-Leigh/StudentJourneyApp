@@ -16,7 +16,26 @@
     <string name="teaching_and_learning">TEACHING AND LEARNING</string>
     <string name="question">Question</string>
     <string name="assignment_with_dates">Assignment With Dates</string>
-    <string name="almuni">Almuni</string>
+    <string name="alumni">Alumni</string>
+    <string name="assessments">Assessments</string>
+    <string name="student">Student Support</string>
     <string name="sign_in">Sign IN</string>
     <string name="sign_in1">SIGN IN</string>
+
+    <!--Student Support Questions-->
+    <string name="Question1">Who owns Stadio?</string>
+    <string name="Question2">Who is Stadio?</string>
+    <string name="Question3">What faculties and schools do you have?</string>
+    <string name="Question4">Are you planning any new faculties or schools?</string>
+    <string name="Question5">Where are your campuses?</string>
+    <string name="Question6">Why was Stadio Established?</string>
+
+    <!--Student Support Questions-->
+    <string name="Answer1">Answer</string>
+    <string name="Answer2">Answer</string>
+    <string name="Answer3">Answer</string>
+    <string name="Answer4">Answer</string>
+    <string name="Answer5">Answer</string>
+    <string name="Answer6">Answer</string>
+
 </resources>

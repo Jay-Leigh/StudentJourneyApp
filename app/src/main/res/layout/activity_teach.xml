@@ -11,8 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/gback"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="37dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.040"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"/>
 
     <Button
         android:id="@+id/button"
@@ -129,29 +133,22 @@
             app:layout_constraintVertical_bias="0"
             app:srcCompat="@drawable/bteach" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="353dp"
-            android:layout_height="106dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:letterSpacing="0.01"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:text="@string/teaching_and_learning"
-            android:textAllCaps="false"
-            android:background="non"
-            android:textColor="#FFFFFF"
-            android:textSize="26sp"
-            app:iconPadding="0dp"
-            tools:visibility="visible" />
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="normal" />
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
             android:layout_width="match_parent"
@@ -168,19 +165,22 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:background="@color/lgrey"
-            app:menu="@menu/bttmnav"
             app:itemIconSize="48dp"
-            app:itemIconTint="@color/white"/>
+            app:itemIconTint="@color/white"
+            app:menu="@menu/bttmnav" />
 
     </RelativeLayout>
-
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="55dp"
-        android:layout_height="43dp"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
         app:srcCompat="@drawable/teach"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
