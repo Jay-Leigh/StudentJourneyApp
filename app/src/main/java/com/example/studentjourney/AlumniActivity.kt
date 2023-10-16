@@ -16,5 +16,4 @@ class AlumniActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    }
 }
