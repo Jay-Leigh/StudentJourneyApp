@@ -23,9 +23,11 @@
             android:gravity="start|center"
             android:layout_width="190dp"
             android:layout_height="50dp"
+            android:paddingStart="20dp"
             android:text="@string/name"
+            android:textStyle="bold"
             android:background="@drawable/contentblock"
-            android:textSize="18sp"/>
+            android:textSize="20sp"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -35,158 +37,184 @@
             android:scaleX=".7"
             android:scaleY=".7"/>
 
-        <GridView
+        <GridLayout
             android:id="@+id/gvPages"
-            android:translationX="60dp"
+            android:translationX="40dp"
+            android:columnCount="3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numColumns="3"
-            android:rowCount="2">
+            android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Pg1"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="90dp"
+                    android:layout_height="100dp">
                     <ImageView
                         android:id="@+id/ivPrep"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:translationX="15dp"
                         android:background="@drawable/prep"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationX="25dp"
+                        android:translationY="70dp"
+                        android:gravity="center"
+                        android:text="@string/prep"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Pg2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="90dp"
+                    android:layout_height="100dp">
                     <ImageView
                         android:id="@+id/ivTeach"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:translationX="15dp"
                         android:background="@drawable/teach"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationY="65dp"
+                        android:gravity="center"
+                        android:text="@string/teaching_and_learning"/>
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Pg3"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="90dp"
+                    android:layout_height="100dp">
                     <ImageView
                         android:id="@+id/ivAssess"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:translationX="15dp"
                         android:background="@drawable/assess"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationY="65dp"
+                        android:gravity="center"
+                        android:text="@string/assessments"/>
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Pg4"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="90dp"
+                    android:layout_height="100dp">
                     <ImageView
                         android:id="@+id/ivCert"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:translationX="15dp"
                         android:background="@drawable/cert"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationX="5dp"
+                        android:translationY="70dp"
+                        android:gravity="center"
+                        android:text="@string/certification"/>
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Pg5"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="90dp"
+                    android:layout_height="100dp">
                     <ImageView
                         android:id="@+id/ivAlumni"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:translationX="15dp"
                         android:background="@drawable/alumni"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationX="20dp"
+                        android:translationY="70dp"
+                        android:gravity="center"
+                        android:text="@string/alumni"/>
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Pg6"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="90dp"
+                    android:layout_height="100dp">
                     <ImageView
                         android:id="@+id/ivSupp"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:translationX="15dp"
                         android:background="@drawable/supp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:translationY="65dp"
+                        android:text="@string/student"/>
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
-        </GridView>
+        </GridLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
