@@ -5,8 +5,8 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="create_an_account">Create An Account</string>
-    <string name="home">Home</string>
-    <string name="menu">Menu</string>
+    <string name="home"><!-- No Text --></string>
+    <string name="menu"><!-- No Text --></string>
     <string name="name">Name</string>
     <string name="prep">Prep</string>
     <string name="prep_and_learning">Prep and Learning</string>

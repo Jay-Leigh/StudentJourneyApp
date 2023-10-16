@@ -168,7 +168,9 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:background="@color/lgrey"
-            app:menu="@menu/bttmnav" />
+            app:menu="@menu/bttmnav"
+            app:itemIconSize="48dp"
+            app:itemIconTint="@color/white"/>
 
     </RelativeLayout>
 
