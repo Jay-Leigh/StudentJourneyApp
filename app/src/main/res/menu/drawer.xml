@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Prep"
+        android:title="@string/prep_and_learning"
+        android:icon="@drawable/prep"/>
+
+    <item
+        android:id="@+id/Teach"
+        android:title="@string/teaching_and_learning"
+        android:icon="@drawable/teach"/>
+
+    <item
+        android:id="@+id/Supp"
+        android:title="@string/student"
+        android:icon="@drawable/supp"/>
+
+    <item
+        android:id="@+id/Assess"
+        android:title="@string/assessments"
+        android:icon="@drawable/assess"/>
+
+    <item
+        android:id="@+id/Cert"
+        android:title="@string/certification"
+        android:icon="@drawable/cert"/>
+
+    <item
+        android:id="@+id/Alumni"
+        android:title="@string/alumni"
+        android:icon="@drawable/alumni"/>
+
+</menu>
