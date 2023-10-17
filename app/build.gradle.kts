@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("kotlin-android-extensions")
 }
 
 android {
@@ -59,7 +60,19 @@ dependencies {
     // Add the dependency for the Cloud Storage library
     implementation("com.google.firebase:firebase-storage-ktx")
 
+    // Adding materials for extra resources
     implementation("com.google.android.material:material:1.10.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.10")
+
+    //Library
+    implementation("com.github.eddydn:videoplayer:1.10")
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
+    implementation("com.facebook.shimmer:shimmer:0.1.0@aar")
+    implementation("androidx.recyclerview:recyclerview:1.3.1@aar")
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

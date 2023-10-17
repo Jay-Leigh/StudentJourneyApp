@@ -66,12 +66,29 @@
 
         </RelativeLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:background="@drawable/contentblock"
-            android:translationY="20dp"
-            android:layout_gravity="center"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"/>
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/abl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextAppearance="@style/CustomTabStyle"
+                app:tabBackground="@color/lgrey"
+                app:tabGravity="fill"
+                app:tabInlineLabel="true"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/black"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/Vpager"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="@id/abl"/>
 
         <RelativeLayout
             android:layout_width="match_parent"

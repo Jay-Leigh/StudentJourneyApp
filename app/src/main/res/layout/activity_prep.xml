@@ -64,12 +64,31 @@
 
         </RelativeLayout>
 
-        <ListView
-            android:layout_gravity="center"
-            android:layout_width="400dp"
-            android:layout_height="400dp">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/fbShim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/video_placeholder"/>
+                <include layout="@layout/video_placeholder"/>
+                <include layout="@layout/video_placeholder"/>
+                <include layout="@layout/video_placeholder"/>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <edmt.dev.videoplayer.VideoPlayerRecyclerView
+            android:id="@+id/VPRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
