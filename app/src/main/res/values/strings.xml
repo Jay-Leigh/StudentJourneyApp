@@ -39,5 +39,9 @@
     <string name="Answer6">Answer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="percentage">Percentage:</string>
+    <string name="_86">86%</string>
+    <string name="web_development_project">Web Development Project</string>
+    <string name="module_name">Module Name:</string>
 
 </resources>

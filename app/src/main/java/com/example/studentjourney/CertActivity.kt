@@ -4,16 +4,65 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.studentjourney.adapters.RResultsAdapter
+import com.example.studentjourney.classs.Results
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class CertActivity : AppCompatActivity() {
+
+    private lateinit var dbref : DatabaseReference
+    private lateinit var resultsRecyclerview : RecyclerView
+    private lateinit var resultsArrayList : ArrayList<Results>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cert)
 
         val ibBack = findViewById<ImageButton>(R.id.ibBack)
-        ibBack.setOnClickListener{
+        ibBack.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+
+        resultsRecyclerview = findViewById(R.id.rv)
+        resultsRecyclerview.layoutManager = LinearLayoutManager(this)
+        resultsRecyclerview.setHasFixedSize(true)
+
+        resultsArrayList = arrayListOf<Results>()
+        getResultData()
+    }
+        private fun getResultData() {
+
+            dbref = FirebaseDatabase.getInstance().getReference("Results")
+
+            dbref.addValueEventListener(object : ValueEventListener {
+
+                override fun onDataChange(snapshot: DataSnapshot) {
+
+                    if (snapshot.exists()){
+
+                        for (resultSnapshot in snapshot.children){
+
+                            val results = resultSnapshot.getValue(Results::class.java)
+                            resultsArrayList.add(results!!)
+
+                        }
+                        resultsRecyclerview.adapter = RResultsAdapter(resultsArrayList)
+
+                    }
+
+                }
+                override fun onCancelled(error: DatabaseError) {
+
+                }
+            })
+
         }
     }
 }
