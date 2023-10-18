@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#D8D8D8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="STADIO is owned by STADIO Holdings Limited, an investment holdings company listed on the Johannesburg Stock Exchange (JSE). STADIO Holdings started as a subsidiary of the private schooling group Curro Holdings, but STADIO Holdings unbundled from Curro in 2017. STADIO Holdings also owns 100% of AFDA (www.afda.co.za) and 82,7% of Milpark Education (www.milpark.ac.za)."></TextView>
+
+</RelativeLayout>
