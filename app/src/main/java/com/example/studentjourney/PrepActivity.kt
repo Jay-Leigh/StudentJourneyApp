@@ -70,7 +70,7 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
                                 val videoModel = videoSnapshot.getValue(VideoModel::class.java)
                                 val mediaObject = MediaObject(
                                     videoModel!!.name,
-                                    videoModel!!.mediaurl,
+                                    videoModel!!.thumbnail,
                                     videoModel!!.mediaurl,
                                     ""
                                 )
