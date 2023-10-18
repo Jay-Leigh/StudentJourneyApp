@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#D8D8D8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Most private higher education institutions in South Africa have a narrow focus, usually offering a range of qualifications in a single field. LISOF specialised in fashion; Prestige Academy focused on business, IT and design studies; Southern Business School specialised in commerce and law; whilst Embury was a specialist teacher training institution. Also, institutions usually either offer qualifications on a campus or through distance learning.
+With the establishment of STADIO, we can now offer students a wide range of qualifications through various modes of delivery, on campus or from where ever you are, with innovative online capability supporting both modes."/>
+
+</RelativeLayout>

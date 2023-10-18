@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#D8D8D8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:text="STADIO currently has the following faculties, with their specialist schools:&#xA;
+-The Faculty of Arts and Design offers two schools namely; School of Fashion and School of Media and Design&#xA;
+-The Faculty of Commerce, Administration and Management offers three schools namely; School of Administration and Management, School of Commerce, School of Management for Safety in Society&#xA;
+-The Faculty of Education offers one school namely; School of Education&#xA;
+-The Faculty of Law offers one school namely; School of Law&#xA;
+-The Faculty of Science and Technologies offers one school namely; School of Information Technology"/>
+
+</RelativeLayout>
