@@ -9,13 +9,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/al2"
+                android:translationX="-00dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="118dp"
+                android:layout_marginTop="48dp"
+                android:layout_toEndOf="@+id/iv"
+                android:text="Enste Gramm"
+                android:translationX="-90dp"
+                android:translationY="0dp" />
+
+        </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:text="Alumni 2"
-            android:textColor="@color/black"
-            android:textSize="24sp"
+            android:text="Bachelors of Commerce
+            \n \n Miss Gramm is currently working on her start up company after graduating from STADIO Bellville."
             />
 
     </RelativeLayout>

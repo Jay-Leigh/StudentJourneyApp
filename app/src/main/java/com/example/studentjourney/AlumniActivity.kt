@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.TextView
 import com.example.studentjourney.adapters.ViewPagerAdapter
 import com.example.studentjourney.fragments.Ailum1Fragment
 import com.example.studentjourney.fragments.Ailum2Fragment
@@ -23,7 +24,10 @@ class AlumniActivity : AppCompatActivity() {
 
         //setting date for next graduation
         val date = LocalDate.of(2023,Month.DECEMBER, 5)
-        println(date)
+
+        val tvDate = findViewById<TextView>(R.id.tvDate)
+
+        tvDate.text = date.toString()
 
         val ibBack = findViewById<ImageButton>(R.id.ibBack)
         ibBack.setOnClickListener{
