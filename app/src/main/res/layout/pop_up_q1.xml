@@ -13,6 +13,6 @@
         android:layout_margin="30dp"
         android:textSize="20sp"
         android:textAlignment="center"
-        android:text="STADIO is owned by STADIO Holdings Limited, an investment holdings company listed on the Johannesburg Stock Exchange (JSE). STADIO Holdings started as a subsidiary of the private schooling group Curro Holdings, but STADIO Holdings unbundled from Curro in 2017. STADIO Holdings also owns 100% of AFDA (www.afda.co.za) and 82,7% of Milpark Education (www.milpark.ac.za)."></TextView>
+        android:text="STADIO is owned by STADIO Holdings Limited, an investment holdings company listed on the Johannesburg Stock Exchange (JSE). STADIO Holdings started as a subsidiary of the private schooling group Curro Holdings, but STADIO Holdings unbundled from Curro in 2017. STADIO Holdings also owns 100% of AFDA (www.afda.co.za) and 82,7% of Milpark Education (www.milpark.ac.za)."/>
 
 </RelativeLayout>

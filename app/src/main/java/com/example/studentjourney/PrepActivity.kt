@@ -16,23 +16,28 @@ import com.bumptech.glide.RequestManager
 import com.bumptech.glide.request.RequestOptions
 import com.example.studentjourney.Interface.IVideoLoadListener
 import com.example.studentjourney.Model.VideoModel
+import com.facebook.shimmer.ShimmerFrameLayout
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.ktx.Firebase
+import edmt.dev.videoplayer.VideoPlayerRecyclerView
 import edmt.dev.videoplayer.adapter.VideoPlayerRecyclerAdapter
 import edmt.dev.videoplayer.model.MediaObject
 import edmt.dev.videoplayer.utils.VerticalSpacingItemDecorator
-import kotlinx.android.synthetic.main.activity_prep.VPRV
-import kotlinx.android.synthetic.main.activity_prep.fbShim
 
 class PrepActivity : AppCompatActivity(), IVideoLoadListener {
 
     private lateinit var listener: IVideoLoadListener
+    private lateinit var VPRV : VideoPlayerRecyclerView
+    private lateinit var fbShim : ShimmerFrameLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_prep)
+
+        VPRV = findViewById(R.id.VPRV)
+        fbShim = findViewById(R.id.fbShim)
 
         init()
 

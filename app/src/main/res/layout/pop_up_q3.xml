@@ -11,16 +11,16 @@
         android:layout_centerInParent="true"
         android:layout_margin="30dp"
         android:textSize="20sp"
-        android:text="STADIO has eight campuses in South Africa, and two support offices in Namibia. List of campuses, with their previous institution name:&#xA;
--Bellville (Cape Town) formerly Prestige Academy&#xA;
--Centurion (Pretoria) formerly Prestige Academy&#xA;
--Hatfield (Pretoria) formerly LISOF&#xA;
--Krugersdorp (Johannesburg) formerly SBS&#xA;
--Montana (Pretoria) formerly Embury&#xA;
--Musgrave (Durban) formerly Embury&#xA;
--Randburg (Johannesburg) formerly LISOF&#xA;
--Waterfall (Midrand) formerly Embury&#xA;
--Windhoek Distance Learning Support Office (Namibia) formerly SBS&#xA;
--Ongwediva Distance Learning Support Office (Namibia) formerly SBS"&#xA;/>
+        android:text="STADIO has eight campuses in South Africa, and two support offices in Namibia. List of campuses, with their previous institution name:\n
+-Bellville (Cape Town) formerly Prestige Academy\n
+-Centurion (Pretoria) formerly Prestige Academy\n
+-Hatfield (Pretoria) formerly LISOF\n
+-Krugersdorp (Johannesburg) formerly SBS\n
+-Montana (Pretoria) formerly Embury\n
+-Musgrave (Durban) formerly Embury\n
+-Randburg (Johannesburg) formerly LISOF\n
+-Waterfall (Midrand) formerly Embury\n
+-Windhoek Distance Learning Support Office (Namibia) formerly SBS\n
+-Ongwediva Distance Learning Support Office (Namibia) formerly SBS"/>
 
 </RelativeLayout>
