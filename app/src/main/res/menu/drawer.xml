@@ -31,4 +31,8 @@
         android:title="@string/alumni"
         android:icon="@drawable/alumni"/>
 
+    <item
+        android:id="@+id/SignOut"
+        android:title="Sign Out"/>
+
 </menu>
