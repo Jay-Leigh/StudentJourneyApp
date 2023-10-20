@@ -32,7 +32,7 @@
         android:icon="@drawable/alumni"/>
 
     <item
-        android:id="@+id/SignOut"
+        android:id="@+id/vSignOut"
         android:title="Sign Out"/>
 
 </menu>
