@@ -29,6 +29,7 @@ import edmt.dev.videoplayer.utils.VerticalSpacingItemDecorator
 
 class PrepActivity : AppCompatActivity(), IVideoLoadListener {
 
+    // declaring binding variables
     private lateinit var listener: IVideoLoadListener
     private lateinit var VPRV : VideoPlayerRecyclerView
     private lateinit var fbShim : ShimmerFrameLayout
@@ -36,11 +37,14 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_prep)
 
+        // declaring/ referencing variables
         VPRV = findViewById(R.id.VPRV)
         fbShim = findViewById(R.id.fbShim)
 
+        // calling function
         init()
 
+        // back button function
         val ibBack = findViewById<ImageButton>(R.id.ibBack)
         ibBack.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -48,6 +52,7 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
         }
     }
 
+    // creating a layout for the video player
     private fun init() {
         listener = this
 
@@ -57,6 +62,7 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
         VPRV.addItemDecoration(verticalSpacingItemDecorator)
         loadVideoFromFirebase()
     }
+    // creating function that plays videos from realtime database
     private fun loadVideoFromFirebase() {
 
         fbShim.startShimmerAnimation()
@@ -99,6 +105,7 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
     }
 
 
+    // function that runs if the video loads successfully
     override fun onVideoLoadSuccess(videoModelList: ArrayList<MediaObject>) {
         VPRV.setMediaObjects(videoModelList)
         val adapter = VideoPlayerRecyclerAdapter(videoModelList, initGlide())
@@ -108,6 +115,7 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
         fbShim.visibility = View.GONE
     }
 
+    // function that allows the user to swipe the screen to view more videos
     private fun initGlide(): RequestManager {
         val options = RequestOptions()
             .placeholder(edmt.dev.videoplayer.R.drawable.white_background)
@@ -115,6 +123,7 @@ class PrepActivity : AppCompatActivity(), IVideoLoadListener {
         return Glide.with(this).setDefaultRequestOptions(options)
     }
 
+    // function that lets the user know the error if the video fails to run
     override fun onVideoFailed(message: String) {
         fbShim.stopShimmerAnimation()
         fbShim.visibility = View.GONE

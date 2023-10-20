@@ -13,6 +13,7 @@ class AssessActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_assess)
 
+        // back button intent
         val ibBack = findViewById<ImageButton>(R.id.ibBack)
         ibBack.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)

@@ -16,12 +16,14 @@ import java.time.Month
 
 class AlumniActivity : AppCompatActivity() {
 
+    // declaring view binding variables
     private lateinit var pager : ViewPager
     private lateinit var tab : TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alumni)
 
+        // referencing elements from xml
         pager = findViewById(R.id.Vpager)
         tab = findViewById(R.id.tabs)
 
@@ -35,6 +37,7 @@ class AlumniActivity : AppCompatActivity() {
 
         tvDate.text = date.toString()
 
+        // back button function
         val ibBack = findViewById<ImageButton>(R.id.ibBack)
         ibBack.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -42,6 +45,7 @@ class AlumniActivity : AppCompatActivity() {
         }
 
     }
+    // setting tabs function
     private fun setUpTabs(){
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFragment(Ailum1Fragment(), "Alumni 1")

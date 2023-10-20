@@ -10,6 +10,7 @@ class TeachActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teach)
 
+        // back button function
         val ibBack = findViewById<ImageButton>(R.id.ibBack)
         ibBack.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)

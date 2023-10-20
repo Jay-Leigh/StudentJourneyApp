@@ -7,7 +7,7 @@
     tools:context=".TeachActivity">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/ibBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/gback"

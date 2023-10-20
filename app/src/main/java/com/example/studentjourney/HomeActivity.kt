@@ -15,19 +15,23 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
-
+    // Declaring new firebase authentication variable
     private lateinit var auth : FirebaseAuth
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        // calling firebase authentication
         auth = FirebaseAuth.getInstance()
 
+        // creating display name from firebase
         val displayName = intent.getStringArrayExtra("name")
 
+        // dipslaying name from firebase on textview
         findViewById<TextView>(R.id.tvDname).text = displayName.toString()
 
+        // declaring bottom navigation
         val bttmNav = findViewById<BottomNavigationView>(R.id.Nav)
         val navController = findNavController(R.id.llMain)
 
@@ -37,6 +41,7 @@ class HomeActivity : AppCompatActivity() {
 
         bttmNav.setupWithNavController(navController)
 
+        // setting navigation
         bttmNav.setOnNavigationItemReselectedListener {
             when(it.itemId){
                 R.id.home -> setContentView(R.layout.activity_home)
@@ -47,6 +52,7 @@ class HomeActivity : AppCompatActivity() {
 
         clickListener();
     }
+    // creating intent function for pages
     private fun clickListener(){
         val imgPrep = findViewById<ImageView>(R.id.ivPrep);
         val imgTeach = findViewById<ImageView>(R.id.ivTeach);
