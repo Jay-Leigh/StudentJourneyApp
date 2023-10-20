@@ -1,5 +1,6 @@
 package com.example.studentjourney
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var auth : FirebaseAuth
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -33,6 +35,14 @@ class HomeActivity : AppCompatActivity() {
         /*setupActionBarWithNavController(navController,appBarConfiguration)*/
 
         bttmNav.setupWithNavController(navController)
+
+        bttmNav.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.home -> setContentView(R.layout.activity_home)
+                R.id.menu -> setContentView(R.menu.drawer)
+            }
+            true
+        }
 
         clickListener();
     }
