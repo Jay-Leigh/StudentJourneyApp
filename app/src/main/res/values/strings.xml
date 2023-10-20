@@ -21,6 +21,7 @@
     <string name="student">Student Support</string>
     <string name="sign_in">Sign IN</string>
     <string name="sign_in1">SIGN IN</string>
+    <string name="sign_out">SIGN OUT</string>
 
     <!--Student Support Questions-->
     <string name="Question1">Who owns Stadio?</string>

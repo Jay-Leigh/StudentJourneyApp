@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -42,6 +43,7 @@ class HomeActivity : AppCompatActivity() {
                 R.id.menu -> setContentView(R.menu.drawer)
             }
         }
+
 
         clickListener();
     }

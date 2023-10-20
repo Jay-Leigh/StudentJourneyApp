@@ -34,8 +34,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Sign Out
-
-
     }
 }
