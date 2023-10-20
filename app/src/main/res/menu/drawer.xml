@@ -44,7 +44,8 @@
 
             <item
                 android:id="@+id/vSignOut"
-                android:title="@string/sign_out"/>
+                android:title="@string/sign_out"
+                android:onClick="logoutUser"/>
 
         </menu>
 
