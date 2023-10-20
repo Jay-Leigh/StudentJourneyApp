@@ -1,38 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
     <item
         android:id="@+id/Prep"
         android:title="@string/prep_and_learning"
-        android:icon="@drawable/prep"/>
+        android:icon="@drawable/prep"
+        android:iconTint="@color/lgreen"/>
 
     <item
         android:id="@+id/Teach"
         android:title="@string/teaching_and_learning"
-        android:icon="@drawable/teach"/>
+        android:icon="@drawable/teach"
+        android:iconTint="@color/lgreen"/>
 
     <item
         android:id="@+id/Supp"
         android:title="@string/student"
-        android:icon="@drawable/supp"/>
+        android:icon="@drawable/supp"
+        android:iconTint="@color/lgreen"/>
 
     <item
         android:id="@+id/Assess"
         android:title="@string/assessments"
-        android:icon="@drawable/assess"/>
+        android:icon="@drawable/assess"
+        android:iconTint="@color/lgreen"/>
 
     <item
         android:id="@+id/Cert"
         android:title="@string/certification"
-        android:icon="@drawable/cert"/>
+        android:icon="@drawable/cert"
+        android:iconTint="@color/lgreen"/>
 
     <item
         android:id="@+id/Alumni"
         android:title="@string/alumni"
-        android:icon="@drawable/alumni"/>
+        android:icon="@drawable/alumni"
+        android:iconTint="@color/lgreen"/>
 
-    <item
-        android:id="@+id/vSignOut"
-        android:title="Sign Out"/>
+    <item android:title="@string/home">
 
+        <menu>
+
+            <item
+                android:id="@+id/vSignOut"
+                android:title="@string/sign_out"/>
+
+        </menu>
+
+    </item>
 </menu>
